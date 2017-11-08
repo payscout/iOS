@@ -4,7 +4,7 @@ func sayHello(url: String) {
             "content-type": "application/x-www-form-urlencoded",
         ]
         let apiURL = URL(string: url);
-        let postData = "client_username={yourUsername}&client_password={yourPassword}&client_token=token&processing_type=CAPTURE¤cy=USD&initial_amount=99.99&original_transaction_id=A000133RY3R&billing_invoice_number=1999".data(using: String.Encoding.utf8);
+        let postData = "client_username={yourUsername}&client_password={yourPassword}&client_token=token&processing_type=CAPTURE&currency=USD&initial_amount=99.99&original_transaction_id=A000133RY3R&billing_invoice_number=1999".data(using: String.Encoding.utf8);
 
         var request = URLRequest(url: apiURL!)
         request.httpMethod = "POST"
